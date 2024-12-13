@@ -89,9 +89,16 @@ plt.xlabel("x")
 plt.ylabel("y")
 plt.legend()
 plt.grid()
-plt.show()
+
+# Show the plot without blocking program execution
+plt.show(block=False)
+plt.pause(1)  # Pause to ensure the plot is displayed briefly before moving on
 
 # Step 7: Print results
 # Display the values of x and y for each step in the terminal.
 print("x values:", x_values)
 print("y values:", y_values)
+
+# Keep the plot window open until the user closes it
+plt.show()
+
